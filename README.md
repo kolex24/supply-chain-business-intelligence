@@ -65,7 +65,6 @@ These indicators provide a high-level overview before users explore the detailed
 ### Sales and Profit by Category
 
 A comparative chart displays sales and profit across product categories.
-Office supplies generate the most sales (692.18K) and Furnitures generate the highest profit(256.26K)
 
 This visualization helps stakeholders evaluate category-level performance and identify differences between sales volume and profitability.
 
@@ -74,8 +73,6 @@ This visualization helps stakeholders evaluate category-level performance and id
 A horizontal bar chart summarizes returned orders by return reason.
 
 It helps stakeholders identify frequently reported return categories and investigate potential product, fulfillment, or customer-experience issues.
-- Wrong items (25) is the most frequently return order i.e wrong items are mistakenly ships 25 times
-- while late delivery (14) have the least return
 
 ### Monthly Revenue and Gross Profit Trends
 
@@ -146,29 +143,130 @@ The dashboard provides a foundation for several business activities:
 * **Operational analysis:** Explore performance across states and shipping modes.
 * **Decision support:** Give stakeholders a consolidated view of business performance.
 
-## 10. Limitations and Scope
+## 10. Key Insights and Business Recommendations
 
-The current dashboard focuses on sales, profitability, shipping costs, and returns.
+The dashboard provides insights into sales performance, profitability, product returns, and shipping expenditure. These findings highlight opportunities to improve order fulfillment, prepare for seasonal demand, and strengthen profitability monitoring.
 
-Inventory replenishment and stock-risk monitoring are outside the scope of this dashboard version. The report should therefore not be interpreted as a complete inventory optimization solution.
+### 10.1 Key Business Insights
 
-The dashboard highlights patterns and potential areas for investigation; further analysis is needed to establish root causes and validate specific business recommendations.
+**Insight 1: Office Supplies generate the highest sales.**
 
-## 11. Conclusion
+Office Supplies recorded approximately **692.18K in sales**, making it the highest-selling category among the categories displayed in the dashboard.
 
-The Supply Chain Performance Analysis project demonstrates the application of Power BI to business performance monitoring and exploratory analysis.
+Furniture generated the highest profit, at approximately **256.26K**.
 
-By integrating key financial, product, shipping, and returns metrics into one interactive dashboard, the report enables stakeholders to explore performance patterns and identify areas that may require further investigation.
+**Business implication:** The category generating the highest revenue is not necessarily the category generating the highest profit. Management should evaluate sales and profitability together when making product and category-level decisions.
 
-The project also demonstrates the importance of validating DAX measures and ensuring that product-level calculations respond correctly to the relevant filter context.
+**Insight 2: Wrong-item returns are a major operational concern.**
 
-## 12. Future Enhancements
+The return-reason analysis shows that **Wrong Item accounts for 25 returned orders**, making it the most frequently displayed return reason. Late Delivery accounts for 14 returned orders, the lowest among the displayed categories.
 
-Potential future enhancements include:
+**Business implication:** Incorrect shipments may be contributing to avoidable returns and additional fulfillment costs. The business should investigate order-picking, packing, and dispatch verification processes to identify the underlying causes.
 
-* Adding inventory availability and stockout monitoring.
-* Introducing supplier performance analysis.
-* Developing more detailed shipping efficiency comparisons.
-* Adding targets and variance analysis.
-* Incorporating drill-through pages for detailed product and regional investigations.
-* Developing a dedicated inventory replenishment dashboard.
+**Insight 3: Sales fluctuate throughout the year, with a potential increase toward December.**
+
+The monthly revenue trend suggests that sales increase toward December.
+
+**Business implication:** If this pattern is consistent across multiple years, the business may experience higher demand during the December period. Early planning would help the organization prepare its purchasing, stock availability, staffing, and shipping capacity.
+
+This seasonal pattern should be validated against historical data before being treated as a recurring trend.
+
+**Insight 4: Product-level profitability varies.**
+
+The product-level performance table shows differences in revenue and gross profit across individual products.
+
+**Business implication:** Management should evaluate products based on both revenue and profitability. Products generating substantial sales but relatively low profit may require further investigation into their costs, pricing, discounts, and shipping expenses.
+
+**Insight 5: Shipping expenditure requires continuous monitoring.**
+
+The dashboard reports approximately **71.80K in shipping costs**.
+
+**Business implication:** Although this figure shows the scale of shipping expenditure, it does not independently establish whether shipping is efficient. Further analysis by shipping mode, location, and order volume would help identify potential cost-saving opportunities.
+
+### 10.2 Business Recommendations
+
+**Recommendation 1: Introduce order verification before dispatch**
+
+The shipping department should verify each order before dispatch to ensure that the correct products, quantities, and customer delivery details match the order records.
+
+Recommended actions:
+
+* Introduce a pre-dispatch verification checklist.
+* Use barcode scanning or other product identification controls where feasible.
+* Record dispatch errors and their causes.
+* Monitor order accuracy and wrong-item return rates monthly.
+
+**Expected outcome:** Fewer incorrect shipments, reduced avoidable returns, and improved customer satisfaction.
+
+**Recommendation 2: Prepare for increased December demand**
+
+Management should use historical monthly sales data to estimate December demand and begin preparations before the expected peak period.
+
+Recommended actions:
+
+* Identify products that experience higher December sales.
+* Coordinate purchasing and replenishment with suppliers in advance.
+* Review warehouse staffing and shipping capacity before the peak.
+* Monitor stock availability and order fulfillment throughout December.
+
+**Expected outcome:** Reduced stockout risk, improved fulfillment readiness, and a greater ability to meet seasonal customer demand.
+
+**Recommendation 3: Improve product and category profitability monitoring**
+
+Management should compare revenue and gross profit across product categories and individual products.
+
+Recommended actions:
+
+* Identify products with the highest revenue and gross profit.
+* Investigate products with relatively low profit contributions.
+* Review the impact of discounts, product costs, and shipping expenses.
+
+**Expected outcome:** More informed product portfolio decisions and improved profitability management.
+
+**Recommendation 4: Monitor and optimize shipping expenditure**
+
+Management should evaluate shipping costs in relation to order volumes, revenue, and delivery performance.
+
+Recommended actions:
+
+* Compare shipping costs across shipping modes.
+* Calculate shipping cost per order.
+* Investigate unusually expensive routes or delivery methods, where route data is available.
+* Monitor delivery delays alongside shipping expenditure.
+
+**Expected outcome:** Improved logistics cost visibility and opportunities to reduce unnecessary shipping expenses without compromising service quality.
+
+**Recommendation 5: Establish regular KPI monitoring**
+
+Management should review the dashboard regularly to monitor business performance and assess whether operational improvements are working.
+
+Recommended actions:
+
+* Review revenue, gross profit, and profit margin monthly.
+* Monitor return rates and order accuracy.
+* Track shipping cost per order.
+* Compare monthly performance with previous periods.
+* Establish performance targets for key operational indicators.
+
+**Expected outcome:** Better performance monitoring, earlier identification of operational problems, and more informed management decisions.
+
+## 11. Limitations and Scope
+
+The current dashboard focuses on sales performance, profitability, shipping expenditure, product-level performance, and returns.
+
+Inventory availability, stockout monitoring, and replenishment planning are not directly measured in the current dashboard. Recommendations concerning inventory preparation are therefore based on the observed sales pattern and should be supported by inventory data before implementation.
+
+The dashboard also identifies return patterns but does not independently establish their root causes. Further operational investigation is needed to determine why incorrect shipments, delivery delays, or defective products occur.
+
+In addition, the potential December sales increase should be validated using historical data across multiple years where available.
+
+## 12. Conclusion
+
+The Supply Chain Performance Analysis project demonstrates how Microsoft Power BI can transform business data into an interactive business intelligence solution.
+
+The dashboard consolidates key metrics covering sales, profitability, shipping expenditure, product performance, and customer returns. The analysis highlights the strong sales contribution of Office Supplies, the high profit contribution of Furniture, and the need to investigate wrong-item returns.
+
+The findings also support recommendations to strengthen pre-dispatch verification, prepare for potential seasonal demand, monitor product profitability, and improve shipping cost visibility.
+
+Overall, the project demonstrates the value of combining data visualization with business analysis to identify operational improvement opportunities and support evidence-based decision-making.
+
