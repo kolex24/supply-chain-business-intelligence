@@ -271,5 +271,6 @@ The findings also support recommendations to strengthen pre-dispatch verificatio
 Overall, the project demonstrates the value of combining data visualization with business analysis to identify operational improvement opportunities and support evidence-based decision-making.
 
 ![supply chain BI dashboard](supply_chain_bi.png)
+![Data Modeling](Data modeling.png)
 
 
